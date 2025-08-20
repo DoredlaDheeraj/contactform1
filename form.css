@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    background-color: #0b0b3b;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "ariel";
+}
+
+.form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #0b0b3b;
+}
+
+.name-input{
+    display: flex;
+    width: 97%;
+    gap: 20px;
+}
+
+.input{
+    position: relative;
+    margin-top: 5px;
+}
+
+label {
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 94%;
+    padding: 10px;
+    margin: 6px 0px 16px 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.validation0{
+    color: #ff0000;
+    position: absolute;
+    top: 80px;
+}
+
+.validation1{
+    color: #ff0000;
+    position: absolute;
+    top: 70px;
+}
+
+.validation2{
+    color: #ff0000;
+    position: absolute;
+    top: 150px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    background-color: #ff4d5a;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e03b48;
+}
+
+@media (max-width: 500px) {
+    .form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .name-input {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .input {
+        min-width: 100%;
+    }
+}
