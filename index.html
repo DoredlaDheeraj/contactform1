@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetInTouch form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!--form1.html -->
+    <div class="form">
+    <h2>Get In Touch</h2>
+    <form method ="POST" action="https://formsubmit.co/f37a181e0ca69ee08bff88b113cf804f" onsubmit="return validateContactForm()">
+
+        <input type="text" name="_honey" style="display: none;">
+
+        <input type="hidden" name="_captcha" value="false">
+        
+        <input type="hidden" name="_next" value="https://doredladheeraj.github.io/contactform/success.html">
+
+        <div class="name-input">
+            <div class="input">
+                <label>First Name</label>
+                <input type="text" id="fn" name="firstname" placeholder="First Name">
+                <span class="validation0" id="fnError"></span>
+            </div>
+
+            <div class="input">
+                <label>Last Name</label>
+                <input type="text" id="ln" name="lastname" placeholder="Last Name">
+                <span class="validation0" id="lnError"></span>
+            </div>
+        </div>
+            
+        <div class="input">
+            <label>Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+            <span class="validation1" id="emailError"></span>
+        </div>
+
+        <div class="input">
+            <label>Phone</label>
+            <input type="number" name="phone" id="phone" placeholder="1234567890">
+            <span class="validation1" id="phoneError"></span>
+        </div>
+
+        <div class="input">
+            <label>Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+            <span class="validation1" id="subjectError"></span>
+        </div>
+
+        <div class="input">
+            <label>Description</label>
+            <textarea id="CD" name="message" placeholder="Description"></textarea>
+            <span class="validation2" id="cdError"></span>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+</div>
+
+<script src="form.js"></script>
+
+</body>
+</html>
